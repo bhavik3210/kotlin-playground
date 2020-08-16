@@ -1,0 +1,77 @@
+
+#node modules
+node_modules
+# generated files
+bin/
+gen/
+.gradle
+/*/local.properties
+/*/out
+libraries/*/build
+/*/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp
+/build/intermediates
+
+# Eclipse project files
+*.classpath
+*.project
+*.settings
+
+#Ignore intelliJ file
+.idea
+
+
+#Mac base files
+.DS_Store
+
+
+#ignore ant properties
+ant.properties
+local.properties
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+*.class
+
+*.diff
+*.hprof
+#Aditional folders
+doc/
+back/
+
+.apt_generated
+
+target/
+
+
+node_modules
+build
+.idea
+/.idea
+.project
+/.project
+.DS_Store
+.grunt
+.lock-wscript
+*.log
+*.pid
+*.seed
+*.iml
+*.class
+lib-cov
+coverage
+db.json
+logs
+pids
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
