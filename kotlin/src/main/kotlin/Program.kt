@@ -16,6 +16,9 @@ fun main() {
     println(ceil(wholeValue))
 
 
+    val asdfsdf = "AFSDFasdfasdf AFDSFasdf"
+    println(asdfsdf.toLowerCase())
+
 }
 
 fun isWholeNumber(amount: Double): Boolean {
