@@ -7,6 +7,7 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer
 import java.time.LocalDate
 
 data class TodoItem(
+    val id: Int,
     val title: String,
     val details: String,
     val assignedTo: String,
@@ -21,6 +22,7 @@ enum class Importance {
 }
 
 val todo1 = TodoItem(
+    1,
     "Add RestAPI Data Access",
     "Add database support",
     "Me",
@@ -29,6 +31,7 @@ val todo1 = TodoItem(
 )
 
 val todo2 = TodoItem(
+    2,
     "Add RestAPI Service",
     "Add a service to get the data",
     "Me",
@@ -36,4 +39,4 @@ val todo2 = TodoItem(
     Importance.HIGH
 )
 
-val todos = listOf(todo1, todo2)
+var todos = listOf(todo1, todo2)

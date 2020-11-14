@@ -10,10 +10,13 @@ import io.ktor.routing.*
 
 fun main(args: Array<String>): Unit = io.ktor.server.cio.EngineMain.main(args)
 
+val TodoContentV1 = ContentType("application", "vnd.todoapi.v1+json")
+
 @Suppress("unused") // Referenced in application.conf
 @kotlin.jvm.JvmOverloads
 fun Application.module(testing: Boolean = false) {
     install(Routing) {
+        trace { application.log.trace(it.buildText()) }
         todoApi()
     }
 
@@ -25,6 +28,11 @@ fun Application.module(testing: Boolean = false) {
     }
 
     install(ContentNegotiation) {
+//        register(TodoContentV1, JacksonConverter()) - Equivalent to below
+        jackson(TodoContentV1) {
+            enable(SerializationFeature.INDENT_OUTPUT)
+        }
+
         jackson {
             enable(SerializationFeature.INDENT_OUTPUT)
         }
