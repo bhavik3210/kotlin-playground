@@ -1,3 +1,3 @@
 rootProject.name = "todo"
 
-include("todolist-restapi")
+include("todolist-restapi", "todolist-shared")
