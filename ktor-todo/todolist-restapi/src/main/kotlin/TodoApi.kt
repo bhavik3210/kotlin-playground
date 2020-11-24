@@ -24,12 +24,14 @@ fun Routing.todoApi() {
             call.respond(todos)
         }
 
-        get("/todo/{id}") {
+        get("/todos/{id}") {
             val id = call.parameters["id"]
-            id?.let {
+            id?.let { idToBeFound ->
                 try {
-                    val todo = todos[id.toInt()]
-                    call.respond(todo)
+                    val todo = todos.firstOrNull { it.id == idToBeFound.toInt() }
+                    todo?.let {
+                        call.respond(todo)
+                    } ?: call.respond(HttpStatusCode.NotFound)
                 } catch (e: Throwable) {
                     call.respond(HttpStatusCode.NotFound)
                 }
@@ -54,15 +56,27 @@ fun Routing.todoApi() {
 
         patch("/todos/{id}") {
             val id = call.parameters["id"]
-            id?.let {
-                val todoItem = todos.getOrNull(id.toInt())
+            id?.let { idToBePatched ->
+                val todoItem = todos.firstOrNull { it.id == idToBePatched.toInt() }
                 todoItem?.let {
                     val todo = call.receive<TodoItem>()
-                    todos = todos.filter { it.id != todo.id }
-                    todos = todos + todo
+                    todos = todos.filter { it.id != todoItem.id }
+                    todos = todos + todo.copy(id = todoItem.id)
                     call.respond(HttpStatusCode.NoContent)
                 } ?: call.respond(HttpStatusCode.Unauthorized)
             } ?: call.respond(HttpStatusCode.BadRequest)
+        }
+
+        delete("/todos/{id}") {
+            val id = call.parameters["id"]
+            id?.let { idToBeDeleted ->
+                val todoItem = todos.firstOrNull { it.id == idToBeDeleted.toInt() }
+                todoItem?.let {
+                    todos = todos.filter { it.id != todoItem.id }
+                    todos = todos
+                    call.respond(HttpStatusCode.NoContent)
+                }
+            }
         }
     }
 }

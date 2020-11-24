@@ -16,7 +16,7 @@ val TodoContentV1 = ContentType("application", "vnd.todoapi.v1+json")
 @kotlin.jvm.JvmOverloads
 fun Application.module(testing: Boolean = false) {
     install(Routing) {
-        trace { application.log.trace(it.buildText()) }
+        if (!testing) trace { application.log.trace(it.buildText()) }
         todoApi()
     }
 

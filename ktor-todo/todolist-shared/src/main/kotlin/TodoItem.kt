@@ -7,7 +7,7 @@ import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer
 import java.time.LocalDate
 
 data class TodoItem(
-    val id: Int,
+    var id: Int,
     val title: String,
     val details: String,
     val assignedTo: String,
