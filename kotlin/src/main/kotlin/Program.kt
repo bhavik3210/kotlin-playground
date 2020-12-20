@@ -4,7 +4,7 @@ import kotlin.math.floor
 
 fun main() {
 
-   val decimalValue = 12.4
+    val decimalValue = 12.4
     val wholeValue = 12.0
 
 
@@ -16,6 +16,14 @@ fun main() {
     println(ceil(wholeValue))
 
 
+
+    val decimalValue = listOf<String>("hello", "haha", "world", "!")
+
+    val result = decimalValue.filter { it.contains("!") }
+        .filter { it != "hello" }
+        .map { it.capitalize() }
+
+    print(result)
     val asdfsdf = "AFSDFasdfasdf AFDSFasdf"
     println(asdfsdf.toLowerCase())
 
