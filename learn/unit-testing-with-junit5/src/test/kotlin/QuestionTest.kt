@@ -1,8 +1,6 @@
 @file:Suppress("ClassName")
 
-import org.amshove.kluent.`should not throw`
-import org.amshove.kluent.`should throw`
-import org.amshove.kluent.invoking
+import org.amshove.kluent.*
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
@@ -96,6 +94,44 @@ class QuestionTest {
             Assertions.assertThrows(QuestionException::class.java) {
                 Question(1, user, title, question)
             }
+        }
+
+    }
+
+    @Nested
+    inner class Answers {
+        val user = User(1, "Bhavik")
+        val question = Question(2, user, "title", "question")
+
+        @Test
+        fun `should not have an answer`() {
+            question.answers.shouldBeEmpty()
+        }
+
+        @Test
+        fun `should have an answer`() {
+            question.addAnswer(Answer(1, user, "answer!!!"))
+            question.answers.shouldNotBeEmpty()
+        }
+
+        @Test
+        fun `should contain an answer`() {
+            val answer1 = Answer(1, user, "answer!!!")
+            val answer2 = Answer(2, user, "awer!!!")
+            question.addAnswer(answer1)
+            question.addAnswer(answer2)
+            question.answers `should contain` answer1
+            question.answers `should contain` answer2
+        }
+
+        @Test
+        fun `should not contain an answer that was not added`() {
+            val answer1 = Answer(1, user, "answer!!!")
+            question.addAnswer(answer1)
+
+            val answer2 = Answer(1, user, "awer!!!")
+            question.answers `should contain` answer1
+            question.answers `should not contain` answer2
         }
 
     }
