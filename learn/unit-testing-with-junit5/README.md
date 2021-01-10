@@ -24,3 +24,7 @@
 - use Kluent for kotlin (Java counterpart is AssertJ)
 - Check `UserTest` and `QuestionTest` for examples
 
+## Mocking
+- use with MockK for kotlin
+- [MockK syntax](https://mockk.io)
+- 
