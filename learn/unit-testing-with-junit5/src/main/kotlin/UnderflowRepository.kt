@@ -13,15 +13,15 @@ interface IUserRepository {
 
 class QuestionRepository : IQuestionRepository {
     override fun findQuestion(questionId: Int): Question {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
     override fun update(question: Question) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
     override fun add(question: Question) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
 }

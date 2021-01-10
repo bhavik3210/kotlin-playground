@@ -16,11 +16,11 @@ interface IUserService {
 class UnderflowService(val questionRepository: IQuestionRepository, val userRepository: IUserRepository) : IUnderflowService {
 
     override fun addAnswer(userId: Int, answerId: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
     override fun addQuestion(userId: Int, questionId: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
     override fun voteUpQuestion(questionId: Int, voterId: Int): Int {
@@ -58,11 +58,11 @@ class UnderflowService(val questionRepository: IQuestionRepository, val userRepo
 
 class UserService(val userRepository: IUserRepository) : IUserService {
     override fun addBadge(userId: Int, badgeId: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
     override fun createUser(): User {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        TODO("not implemented") //To change body of created functions use design.File | Settings | design.File Templates.
     }
 
 }
