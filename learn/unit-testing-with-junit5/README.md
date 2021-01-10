@@ -7,8 +7,6 @@
     - if we are on per method lifecycle then it will use new instance for each class BUT if we are on per class lifecycle 
       it will use singe class instance
     - Junit 4 was using per class lifecycle vs Junit 5 is using per method lifecycle by default
-    - 
-      
 
 ## Regular Test | `UserTest`
 - use backticks for more descriptive name for each test
@@ -19,4 +17,10 @@
 
 ## Parameterized Test | `QuestionTest`
 - use parameterized test to provide different variations of parameters on the same test
+
+## Fluent Assertions class with static methods
+- are english like statements
+- "hello" shouldEqual "hello" (infix notation as in Scala)
+- use Kluent for kotlin (Java counterpart is AssertJ)
+- Check `UserTest` and `QuestionTest` for examples
 
