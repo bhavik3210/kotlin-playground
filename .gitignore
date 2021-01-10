@@ -24,7 +24,7 @@ libraries/*/build
 
 #Ignore intelliJ file
 .idea
-
+out
 
 #Mac base files
 .DS_Store
