@@ -27,4 +27,7 @@
 ## Mocking
 - use with MockK for kotlin
 - [MockK syntax](https://mockk.io)
-- 
+
+## Annotations
+- use annotations for cleaner test code
+- example shown in `UnderflowServiceTest` shown three different ways to structure same unit tests
