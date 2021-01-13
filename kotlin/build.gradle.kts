@@ -23,3 +23,5 @@
 //compileTestKotlin {
 //    kotlinOptions.jvmTarget = "1.8"
 //}
+
+apply(from = "gradle/ktlint.gradle.kts")
