@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
     `java-gradle-plugin`
     `maven-publish`
-    id("configs")
+    id("playground-configs")
 }
 
 repositories {
@@ -13,6 +13,7 @@ repositories {
 
 dependencies {
     implementation(Dependencies.Kotlin.gradlePlugin)
+//    implementation(Dependencies.Kotlin.reflect)
     testImplementation(Dependencies.Test.junit)
     compile(Dependencies.Kotlin.coroutines)
     implementation(Dependencies.Kotlin.kotlinJDK)

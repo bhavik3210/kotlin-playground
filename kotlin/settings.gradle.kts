@@ -1,2 +1,2 @@
-includeBuild("configuration")
+includeBuild("playground-configs")
 includeBuild("problem-solving")

@@ -11,6 +11,7 @@ object Dependencies {
         const val kotlinJDK = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES}"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}"
+        const val reflect = "org.jetbrains.kotlin:kotlin-reflect:${Versions.KOTLIN}"
     }
 
     object Test {

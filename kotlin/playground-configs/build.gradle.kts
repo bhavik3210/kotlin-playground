@@ -8,9 +8,9 @@ repositories {
 }
 
 gradlePlugin {
-    plugins.register("configs") {
-        id = "configs"
-        implementationClass = "main.kotlin.com.kotlin.plugins.ConfigsPlugin"
+    plugins.register("playground-configs") {
+        id = "playground-configs"
+        implementationClass = "main.kotlin.com.playground.plugins.PlaygroundConfigsPlugin"
     }
 }
 
