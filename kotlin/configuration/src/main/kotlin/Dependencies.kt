@@ -8,6 +8,7 @@ object Versions {
 
 object Dependencies {
     object Kotlin {
+        const val kotlinJDK = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES_VERSION}"
     }
 
