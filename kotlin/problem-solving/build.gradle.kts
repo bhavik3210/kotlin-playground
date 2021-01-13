@@ -2,8 +2,8 @@ import main.kotlin.Dependencies
 
 plugins {
     `kotlin-dsl`
-    `java-gradle-plugin`
-    `maven-publish`
+//    `java-gradle-plugin`
+//    `maven-publish`
     id("configs")
 }
 
@@ -16,5 +16,5 @@ dependencies {
     compile(Dependencies.Kotlin.coroutines)
     implementation(Dependencies.Kotlin.kotlinJDK)
 }
-//
+
 //kotlin.sourceSets.getByName("main").kotlin.srcDir("../problem-solving/src/main/kotlin")
