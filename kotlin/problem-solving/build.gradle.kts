@@ -2,8 +2,8 @@ import main.kotlin.Dependencies
 
 plugins {
     `kotlin-dsl`
-//    `java-gradle-plugin`
-//    `maven-publish`
+    `java-gradle-plugin`
+    `maven-publish`
     id("configs")
 }
 
@@ -12,7 +12,8 @@ repositories {
 }
 
 dependencies {
-    implementation(Dependencies.Test.junit)
+    implementation(Dependencies.Kotlin.gradlePlugin)
+    testImplementation(Dependencies.Test.junit)
     compile(Dependencies.Kotlin.coroutines)
     implementation(Dependencies.Kotlin.kotlinJDK)
 }

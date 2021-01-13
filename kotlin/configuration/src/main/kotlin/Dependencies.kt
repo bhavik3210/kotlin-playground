@@ -1,18 +1,19 @@
 package main.kotlin
 
 object Versions {
-    const val KOTLIN_VERSION = "1.4.10"
-    const val COROUTINES_VERSION = "1.3.7"
-    const val JUNIT_VERSION = "4.13"
+    const val KOTLIN = "1.4.20"
+    const val COROUTINES = "1.4.1"
+    const val JUNIT = "4.13"
 }
 
 object Dependencies {
     object Kotlin {
         const val kotlinJDK = "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-        const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES_VERSION}"
+        const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.COROUTINES}"
+        const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.KOTLIN}"
     }
 
     object Test {
-        const val junit = "junit:junit:${Versions.JUNIT_VERSION}"
+        const val junit = "junit:junit:${Versions.JUNIT}"
     }
 }
