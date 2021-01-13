@@ -1,4 +1,4 @@
-package ctci6.chapter1
+package main.kotlin.ctci.chapter1
 
 import java.util.*
 

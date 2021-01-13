@@ -1,4 +1,4 @@
-package ctci6.chapter1
+package main.kotlin.ctci.chapter1
 
 /**
  * Implement an algorithm to determine if a string has all unique characters.
@@ -27,4 +27,3 @@ fun hasUniqueChars(string: String): Boolean {
     }
     return true
 }
-
