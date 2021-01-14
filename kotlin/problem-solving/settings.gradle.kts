@@ -1,6 +1,8 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        jcenter()
-    }
-}
+apply(from = "../gradle/globalSettings.gradle.kts")
+
+//pluginManagement {
+//    repositories {
+//        gradlePluginPortal()
+//        jcenter()
+//    }
+//}
