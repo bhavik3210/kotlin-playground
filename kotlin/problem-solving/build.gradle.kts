@@ -2,8 +2,6 @@ import main.kotlin.Dependencies
 
 plugins {
     `kotlin-dsl`
-    `java-gradle-plugin`
-    `maven-publish`
     id("playground-configs")
     id("play-build")
 }
