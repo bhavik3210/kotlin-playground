@@ -17,3 +17,6 @@ buildscript {
         classpath("com.google.code.gson:gson:2.8.6")
     }
 }
+
+includeBuild("../playground-build")
+includeBuild("../playground-configs")
