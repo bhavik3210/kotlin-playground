@@ -1,6 +1,6 @@
 apply(from = "../gradle/globalSettings.gradle.kts")
 
-rootProject.name = "playground-app"
+rootProject.name = "play-app"
 
 pluginManagement {
   repositories {

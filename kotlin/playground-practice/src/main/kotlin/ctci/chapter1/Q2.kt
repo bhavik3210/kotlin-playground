@@ -2,7 +2,7 @@ package ctci.chapter1
 
 import java.util.*
 
-fun isPermutation(first: String, second: String): Boolean {
+fun Pair<String, String>.isPermutation(): Boolean {
     if (first.length != second.length) {
         return false
     }
@@ -17,4 +17,6 @@ fun isPermutation(first: String, second: String): Boolean {
     }
     return true
 }
+
+
 

@@ -1,6 +1,6 @@
 apply(from = "../gradle/globalSettings.gradle.kts")
 
-rootProject.name = "problem-solving"
+rootProject.name = "training-center"
 
 pluginManagement {
     repositories {

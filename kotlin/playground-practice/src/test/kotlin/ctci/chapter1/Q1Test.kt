@@ -16,7 +16,7 @@ class Q1Test {
     @Test
     fun `test and compare unique characters result from both solutions`() {
         testStrings.forEach {
-            assertEquals(hasUniqueChars(it), hasUniqueCharacters(it))
+            assertEquals(it.hasUniqueChars(), it.hasUniqueCharacters())
         }
     }
 
