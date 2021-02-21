@@ -12,7 +12,7 @@ repositories {
 gradlePlugin {
     plugins.register("play-build") {
         id = "play-build"
-        implementationClass = "main.kotlin.com.playground.plugins.PlaygroundPlayPlugin"
+        implementationClass = "com.playground.plugins.PlaygroundPlayPlugin"
     }
 }
 
