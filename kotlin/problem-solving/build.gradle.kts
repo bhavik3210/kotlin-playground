@@ -12,8 +12,8 @@ repositories {
 
 dependencies {
     implementation(Dependencies.Kotlin.gradlePlugin)
-    testImplementation(Dependencies.Test.junit)
-    compile(Dependencies.Kotlin.coroutines)
+    testImplementation(Dependencies.Test.junit4)
+    implementation(Dependencies.Kotlin.coroutines)
     implementation(Dependencies.Kotlin.kotlinJDK)
 }
 
