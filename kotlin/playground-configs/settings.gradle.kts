@@ -1,8 +1,8 @@
 rootProject.name = "play-configs"
 
 pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        jcenter()
-    }
+  repositories {
+    gradlePluginPortal()
+    jcenter()
+  }
 }

@@ -1,21 +1,21 @@
 plugins {
-    `kotlin-dsl`
-    `java-gradle-plugin`
-    id("playground-configs")
+  `kotlin-dsl`
+  `java-gradle-plugin`
+  id("playground-configs")
 }
 
 repositories {
-    gradlePluginPortal()
-    jcenter()
+  gradlePluginPortal()
+  jcenter()
 }
 
 gradlePlugin {
-    plugins.register("play-build") {
-        id = "play-build"
-        implementationClass = "com.playground.plugins.PlaygroundPlayPlugin"
-    }
+  plugins.register("play-build") {
+    id = "play-build"
+    implementationClass = "com.playground.plugins.PlaygroundPlayPlugin"
+  }
 }
 
 kotlinDslPluginOptions {
-    experimentalWarning.set(false)
+  experimentalWarning.set(false)
 }

@@ -1,4 +1,4 @@
-package ctci.chapter1
+package com.playground.training.ctci.chapter1
 
 import org.junit.runner.RunWith
 import org.junit.runners.Suite

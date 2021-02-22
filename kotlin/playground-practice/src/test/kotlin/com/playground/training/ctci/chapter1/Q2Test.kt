@@ -1,4 +1,4 @@
-package ctci.chapter1
+package com.playground.training.ctci.chapter1
 
 import junit.framework.Assert.assertEquals
 import org.junit.Test
