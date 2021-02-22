@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 import io.mockk.MockKAnnotations
 import io.mockk.Runs
 import io.mockk.every

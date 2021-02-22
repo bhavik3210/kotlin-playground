@@ -1,9 +1,11 @@
+package com.playground.commons.models
+
 class Answer(id: Int, author: User, answer: String) : QuestionOrAnswer(id, author, answer) {
 
 
   init {
     if (!isValid())
-      throw QuestionException("Answer either has no body")
+      throw QuestionException("com.playground.commons.models.Answer either has no body")
 
   }
 

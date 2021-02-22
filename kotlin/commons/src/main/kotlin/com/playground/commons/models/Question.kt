@@ -1,8 +1,10 @@
+package com.playground.commons.models
+
 class Question(id: Int, author: User, var title: String, question: String) : QuestionOrAnswer(id, author, question) {
 
     init {
         if (!isValid())
-            throw QuestionException("Question either has no title or body")
+            throw QuestionException("com.playground.commons.models.Question either has no title or body")
     }
 
     private fun isValid(): Boolean {
@@ -41,7 +43,7 @@ class Question(id: Int, author: User, var title: String, question: String) : Que
 
     override fun vote(direction: VoteEnum) {
         if (closed) {
-            throw QuestionException("Question has been de-activated")
+            throw QuestionException("com.playground.commons.models.Question has been de-activated")
         }
         when (direction) {
             VoteEnum.Up -> votes++
@@ -52,7 +54,7 @@ class Question(id: Int, author: User, var title: String, question: String) : Que
 
 
     fun close(reason: String) {
-        if (closed) throw QuestionException("Question already closed")
+        if (closed) throw QuestionException("com.playground.commons.models.Question already closed")
         closed = true
         closedReason = reason
     }

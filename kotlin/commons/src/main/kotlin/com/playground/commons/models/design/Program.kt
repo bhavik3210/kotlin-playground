@@ -1,4 +1,4 @@
-package play.ground.app.testModels.design
+package com.playground.commons.models.design
 
 import design.NioFiles
 import design.NioPaths

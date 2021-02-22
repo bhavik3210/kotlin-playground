@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 abstract class QuestionOrAnswer(var id: Int, var author: User, val body: String) {
 
 

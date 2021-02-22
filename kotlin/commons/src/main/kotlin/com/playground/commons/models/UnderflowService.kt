@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 interface IUnderflowService {
     fun addQuestion(userId: Int, questionId: Int)
     fun addAnswer(userId: Int, answerId: Int)
@@ -30,7 +32,7 @@ class UnderflowService(val questionRepository: IQuestionRepository, val userRepo
             if (voter.canVote()) {
                 question.voteUp()
                 owner.questionOrAnswerVotedOn(VoteEnum.Up)
-            } else throw QuestionException("User does not have enough reputation to vote")
+            } else throw QuestionException("com.playground.commons.models.User does not have enough reputation to vote")
             questionRepository.update(question)
             userRepository.update(owner)
             return question.votes
@@ -47,7 +49,7 @@ class UnderflowService(val questionRepository: IQuestionRepository, val userRepo
         if (voter.canVote()) {
             question.voteDown()
             owner.questionOrAnswerVotedOn(VoteEnum.Down)
-        } else throw QuestionException("User does not have enough reputation to vote")
+        } else throw QuestionException("com.playground.commons.models.User does not have enough reputation to vote")
         questionRepository.update(question)
         userRepository.update(owner)
         return question.votes

@@ -1,5 +1,7 @@
 @file:Suppress("ClassName")
 
+package com.playground.commons.models
+
 import org.amshove.kluent.`should contain`
 import org.amshove.kluent.`should not contain`
 import org.amshove.kluent.`should not throw`

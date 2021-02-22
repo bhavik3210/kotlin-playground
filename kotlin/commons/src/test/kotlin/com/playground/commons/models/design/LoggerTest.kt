@@ -1,7 +1,12 @@
 @file:Suppress("ClassName")
 
-package design
+package com.playground.commons.models.design
 
+import design.File
+import design.Files
+import design.IoFile
+import design.Path
+import design.Paths
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.impl.annotations.MockK
@@ -11,9 +16,6 @@ import org.amshove.kluent.`should equal`
 import org.amshove.kluent.shouldNotBeEmpty
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
-import play.ground.app.testModels.design.Configuration
-import play.ground.app.testModels.design.DateProvider
-import play.ground.app.testModels.design.Logger
 
 class LoggerTest {
 

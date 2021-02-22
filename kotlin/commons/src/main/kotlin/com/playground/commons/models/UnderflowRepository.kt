@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 interface IQuestionRepository {
   fun add(question: Question)
   fun update(question: Question)

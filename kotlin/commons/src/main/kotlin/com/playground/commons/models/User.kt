@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 class User(val id: Int, val name: String) {
 
   var reputation = 0

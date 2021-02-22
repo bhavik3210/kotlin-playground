@@ -1,4 +1,4 @@
-package play.ground.app.testModels.design
+package com.playground.commons.models.design
 
 // Concrete class which is harder to test
 object ConfigurationManager {

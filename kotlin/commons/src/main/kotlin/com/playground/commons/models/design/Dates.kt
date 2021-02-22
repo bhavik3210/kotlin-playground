@@ -1,4 +1,4 @@
-package play.ground.app.testModels.design
+package com.playground.commons.models.design
 
 interface DateProvider {
   val dayOfMonth: Int

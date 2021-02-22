@@ -1,3 +1,5 @@
+package com.playground.commons.models
+
 import org.amshove.kluent.`should be`
 import org.amshove.kluent.shouldBe
 import org.junit.jupiter.api.Test
