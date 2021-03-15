@@ -1,6 +1,6 @@
 package play.ground.jvm.classload
 
-import com.playground.commons.models.ext.separator
+import com.playground.commons.ext.separator
 import java.net.URLClassLoader
 
 object Delegation {

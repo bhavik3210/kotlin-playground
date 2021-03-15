@@ -1,4 +1,4 @@
-package com.playground.commons.models.ext
+package com.playground.commons.ext
 
 fun Int.separator(): String {
   return "=".repeat(this)
